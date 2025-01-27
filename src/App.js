@@ -27,9 +27,9 @@ const App = () => {
 
     if (selectedPrice) {
       if (selectedPrice === "asc") {
-        updatedProducts = updatedProducts.sort((a, b) => a.price - b.price);
+        updatedProducts = updatedProducts.sort((a, b) => b.price - a.price);        
       } else if (selectedPrice === "desc") {
-        updatedProducts = updatedProducts.sort((a, b) => b.price - a.price);
+        updatedProducts = updatedProducts.sort((a, b) => a.price - b.price);
       }
     }
 
